@@ -36,7 +36,7 @@ So, now we have the generator of latent features conditioned by their names.
 
 *Classificator retraining*.
 Now we can generate the dataset of the generated pairs $$ \{f_{\sigma} \left( a \left( c_i \right) \right), c_i \}_{i=1}^K $$ for each class $$ c_i \in \mathcal{C} \cup \mathcal{\tilde{C}} $$ of an arbitrary size $$ K $$.
-We create new network $$ f_{\hat{\theta}_2} $$ instead of $$ f_{\theta_2} $$ having the same size of input, and expanded output of size $$ \vert \mathcal{C} \cup \mathcal{\tilde{C}} $$, and train it on the generated data.
+We create new network $$ f_{\hat{\theta}_2} $$ instead of $$ f_{\theta_2} $$ having the same size of input, and expanded output of size $$ \vert \mathcal{C} \cup \mathcal{\tilde{C}} \vert $$, and train it on the generated data.
 After training we re-assemble FCN as $$ f_{theta} (x) := f_{\hat{\theta}_2} \left(  f_{\theta_1}\left(x\right)\right) $$.
 
 Now, if we have well-trained all the components (I suppose, the most critical one is class-names embedding), we can use our new network for the segmentation of classes, which we have not segmentation markup for.
