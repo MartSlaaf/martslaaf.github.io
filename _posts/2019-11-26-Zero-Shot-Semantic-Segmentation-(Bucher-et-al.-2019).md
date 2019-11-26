@@ -28,7 +28,7 @@ For the sake of simplicity we can suppose the $$ f_{\theta_2} $$ is the last lay
 Now we compose the new dataset.
 Suppose we have the mapping function $$ a(y_k) $$, which maps class label to the vector of the fixed length.
 It could be trained embedding or any other approach which provides semantically-consistent mapping.
-So, the new dataset is $$ \{ a(y_{k,i,j}), f_{\theta_2}(x_k)_{i, j} \}_{k,i,j = 1}^{N, W, H}.
+So, the new dataset is $$ \{ a(y_{k,i,j}), f_{\theta_2}(x_k)_{i, j} \}_{k,i,j = 1}^{N, W, H} $$.
 It is the dataset which maps the embedding of the name of the class of the particular pixel to the latent features of the segmentation network, presented in the same pixel.
 Now we train generative model $$ f_{\sigma}(a(y_{k,i,j}) \rightarrow f_{\theta_2}(x_k)_{i,j}) $$.
 We require from this model to match distributions of generated and real features for each class from the $$ \mathcal{C} $$.
@@ -36,7 +36,7 @@ So, now we have the generator of latent features conditioned by their names.
 
 *Classificator retraining*.
 Now we can generate the dataset of the generated pairs $$ \{f_{\sigma} \left( a \left( c_i \right) \right), c_i \}_{i=1}^K $$ for each class $$ c_i \in \mathcal{C} \cup \mathcal{\tilde{C}} $$ of an arbitrary size $$ K $$.
-We create new network $$ f_{\hat{\theta}_2} instead of $$ f_{\theta_2} $$ having the same size of input, and expanded output of size $$ \vert \mathcal{C} \cup \mathcal{\tilde{C}} $$, and train it on the generated data.
+We create new network $$ f_{\hat{\theta}_2} $$ instead of $$ f_{\theta_2} $$ having the same size of input, and expanded output of size $$ \vert \mathcal{C} \cup \mathcal{\tilde{C}} $$, and train it on the generated data.
 After training we re-assemble FCN as $$ f_{theta} (x) := f_{\hat{\theta}_2} \left(  f_{\theta_1}\left(x\right)\right) $$.
 
 Now, if we have well-trained all the components (I suppose, the most critical one is class-names embedding), we can use our new network for the segmentation of classes, which we have not segmentation markup for.
