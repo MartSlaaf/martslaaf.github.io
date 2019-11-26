@@ -30,7 +30,7 @@ Suppose we have the mapping function $$ a(y_k) $$, which maps class label to the
 It could be trained embedding or any other approach which provides semantically-consistent mapping.
 So, the new dataset is $$ \{ a(y_{k,i,j}), f_{\theta_2}(x_k)_{i, j} \}_{k,i,j = 1}^{N, W, H} $$.
 It is the dataset which maps the embedding of the name of the class of the particular pixel to the latent features of the segmentation network, presented in the same pixel.
-Now we train generative model $$ f_{\sigma}(a(y_{k,i,j}) \rightarrow f_{\theta_2}(x_k)_{i,j}) $$.
+Now we train generative model $$ f_{\sigma}\left(a\left(y_{k,i,j}\right)\right) \rightarrow f_{\theta_2}(x_k)_{i,j} $$.
 We require from this model to match distributions of generated and real features for each class from the $$ \mathcal{C} $$.
 So, now we have the generator of latent features conditioned by their names.
 
