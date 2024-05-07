@@ -2,49 +2,61 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #282c34;
 }
 
 header {
-    background-color: #007acc;
+    background-color: #282c34;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+header h1, header p {
     margin: 0;
-    font-size: 2.5em;
 }
 
-header p {
-    font-size: 1.2em;
+header .nav .nav-link {
+    font-size: 1.1em;
 }
 
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: #3c3f41;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
-.rounded-circle {
-    border: 3px solid #007acc;
+.profile-pic {
+    border: 3px solid #f0db4f;
 }
 
 .list-inline-item a {
-    color: #007acc;
+    color: #f0db4f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .list-inline-item a:hover {
-    color: #005f99;
+    color: #f7df1e;
+}
+
+ul.list-group li {
+    transition: background-color 0.3s ease;
+}
+
+ul.list-group li a {
+    text-decoration: none;
+}
+
+ul.list-group li:hover {
+    background-color: #4a4e51;
 }
 
 footer {
-    background-color: #007acc;
+    background-color: #282c34;
     color: white;
     padding: 10px 0;
     text-align: center;
