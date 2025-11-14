@@ -31,6 +31,11 @@ body {
     color: var(--accent);
 }
 
+.site-header .nav .nav-link.active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
 main {
     max-width: 980px;
     margin: 0 auto;
