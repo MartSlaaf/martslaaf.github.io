@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://martslaaf.github.io/sitemap.xml
+
