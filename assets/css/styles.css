@@ -32,6 +32,16 @@ body {
     background: var(--bg);
 }
 
+.sidebar .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    display: block;
+    margin-bottom: 14px;
+}
+
 .sidebar h1 { font-size: 28px; margin: 0 0 6px; }
 .sidebar p.tagline { color: var(--muted); margin: 0 0 16px; }
 .sidebar nav a { color: var(--muted); text-decoration: none; display: block; padding: 6px 0; }
