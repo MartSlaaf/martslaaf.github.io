@@ -169,3 +169,18 @@ ul.list-group li:hover { background-color: #42515e; }
   .layout { grid-template-columns: 1fr; }
   .sidebar { position: relative; height: auto; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
 }
+
+/* Work lists */
+.work-list { padding-left: 18px; }
+.work-list li { margin: 8px 0 12px; line-height: 1.5; }
+.section p { line-height: 1.6; }
+.content a { color: var(--accent); }
+.pub-list a { color: var(--text); }
+.pub-year { font-size: 16px; color: var(--muted); margin: 22px 0 4px; }
+.pub-list span { color: var(--text); }
+.btn-accent { padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+@media (max-width: 920px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  main, .content { max-width: 100%; box-sizing: border-box; }
+  .content { padding: 24px 16px 48px; }
+}

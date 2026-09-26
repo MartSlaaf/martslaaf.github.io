@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaroslav Zharov — AI Agents Research Lead</title>
-    <meta name="description" content="ML researcher with 12+ years of experience. Leading AI agents research for software engineering at JetBrains Research.">
+    <title>Yaroslav Zharov — Machine Learning Research Lead</title>
+    <meta name="description" content="Machine learning researcher since 2015. I lead research teams on AI agents for software engineering at JetBrains Research, Munich.">
     <link rel="canonical" href="https://martslaaf.github.io/">
 
     <!-- Preconnects for external assets (SRI can be added later) -->
@@ -14,12 +14,12 @@
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://martslaaf.github.io/">
-    <meta property="og:title" content="Yaroslav Zharov — AI Agents Research Lead">
-    <meta property="og:description" content="ML researcher with 12+ years of experience. Leading AI agents research for software engineering at JetBrains Research.">
+    <meta property="og:title" content="Yaroslav Zharov — Machine Learning Research Lead">
+    <meta property="og:description" content="Machine learning researcher since 2015. I lead research teams on AI agents for software engineering at JetBrains Research, Munich.">
     <meta property="og:image" content="assets/img/ava.jpeg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yaroslav Zharov — AI Agents Research Lead">
-    <meta name="twitter:description" content="ML researcher with 12+ years of experience. Leading AI agents research for software engineering at JetBrains Research.">
+    <meta name="twitter:title" content="Yaroslav Zharov — Machine Learning Research Lead">
+    <meta name="twitter:description" content="Machine learning researcher since 2015. I lead research teams on AI agents for software engineering at JetBrains Research, Munich.">
     <meta name="twitter:image" content="assets/img/ava.jpeg">
 
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -32,17 +32,18 @@
         <aside class="sidebar">
             <img src="assets/img/ava.jpeg" alt="Portrait of Yaroslav Zharov" class="avatar" width="128" height="128" loading="lazy">
             <h1>Yaroslav Zharov</h1>
-            <p class="tagline">ML researcher (12+ years). Leading AI agents research for software engineering at JetBrains Research.</p>
+            <p class="tagline">ML researcher since 2015. Research lead for AI agents in software engineering at JetBrains Research, Munich.</p>
             <nav>
                 <a href="#about">About</a>
-                <a href="#focus-areas">Focus Areas</a>
-                <a href="#projects">Projects</a>
+                <a href="#work">Work</a>
+                <a href="#earlier">Earlier</a>
                 <a href="#publications">Publications</a>
+                <a href="#service">Service</a>
                 <a href="#contact">Contact</a>
                 <a href="CV.pdf" target="_blank" rel="noopener">CV</a>
             </nav>
             <div class="contacts">
-                <a href="mailto:yaroslav.zharov@jetbrains.com" title="Email" aria-label="Email">
+                <a href="mailto:mart.slaaf@gmail.com" title="Email" aria-label="Email">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
                 </a>
                 <a href="https://github.com/MartSlaaf" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
@@ -66,43 +67,55 @@
         <main class="content">
             <div class="content-inner">
                 <section id="about" class="section">
-                    <h2>About Me <a class="anchor" href="#about">#</a></h2>
-                    <p>Hi, I’m Yaroslav Zharov. I lead a research team focused on applying AI agentic workflows to real software engineering tasks at JetBrains Research.</p>
+                    <h2>About <a class="anchor" href="#about">#</a></h2>
+                    <p>I have worked on neural networks since 2013 and published my first papers on them in 2015, on wavelet networks and on how to initialise multilayer networks. Since then I have tried to work on machine learning that people use: first in security and banking, then in X-ray imaging for physicists and biologists, and now in AI agents for software engineering.</p>
+                    <p>At JetBrains Research I grew a research team from one person to nine. Since August 2026 I am Lead of ML Research and lead the team leads, about 36 people in total. Several people from the team now lead projects and directions of their own, and I count that among my best results.</p>
+                    <p>I try to understand a problem as deeply as it needs: sometimes that means the physics of the imaging setup, sometimes a long chain of “why?” about an agent's behaviour. I also try to stop my own ideas early when the evidence is against them.</p>
                 </section>
-                <section id="focus-areas" class="section">
-                    <h2>Focus Areas <a class="anchor" href="#focus-areas">#</a></h2>
-                    <ul class="focus-areas">
-                        <li>Agent architectures and orchestration</li>
-                        <li>IDE integration and developer workflows</li>
-                        <li>Evaluation, benchmarks, and reliability</li>
-                        <li>Tooling, memory, and multi-agent collaboration</li>
-                        <li>Safety, guardrails, and observability</li>
+                <section id="work" class="section">
+                    <h2>Current Work <a class="anchor" href="#work">#</a></h2>
+                    <p>My team studies what makes software engineering agents work in practice: the environments they run in, how to train them, how they handle long context, and how to evaluate them.</p>
+                    <ul class="work-list">
+                        <li><strong>Environments.</strong> <a href="https://arxiv.org/abs/2503.14443" target="_blank" rel="noopener">EnvBench</a> is a benchmark of 994 Python and JVM repositories that are hard to set up. <a href="https://arxiv.org/abs/2509.25455" target="_blank" rel="noopener">PIPer</a> trains Qwen3-8B with SFT and RL with verifiable rewards; the result sets up environments on par with Qwen3-32B and GPT-4o and runs on consumer hardware.</li>
+                        <li><strong>Context.</strong> <a href="https://arxiv.org/abs/2508.21433" target="_blank" rel="noopener">The Complexity Trap</a> shows that simply masking old observations halves an agent's cost and matches LLM summarisation in solve rate. A <a href="https://arxiv.org/abs/2605.11051" target="_blank" rel="noopener">follow-up</a> explains why implicit context compression fails on multi-step coding tasks.</li>
+                        <li><strong>Training.</strong> <a href="https://arxiv.org/abs/2605.10674" target="_blank" rel="noopener">Step Rejection Fine-Tuning</a> keeps unresolved agent trajectories and masks only the wrong steps: +3.7 pp on SWE-bench Verified, against +2.4 pp for plain rejection fine-tuning.</li>
+                        <li><strong>Evaluation.</strong> <a href="https://arxiv.org/abs/2505.22583" target="_blank" rel="noopener">GitGoodBench</a> covers Git workflows; <a href="https://arxiv.org/abs/2606.27406" target="_blank" rel="noopener">software world models</a> test whether models predict memory, time, and profiles of real code. For commit messages, we <a href="https://arxiv.org/abs/2410.12046" target="_blank" rel="noopener">chose offline metrics by how well they match what users edit online</a> (ICSE-SEIP 2025).</li>
+                        <li><strong>Products.</strong> The team built an agent-platform prototype, used it in projects with product teams, and took it to production with two of its members; the production platform, rewritten for product needs, is now <a href="https://github.com/JetBrains/koog" target="_blank" rel="noopener">Koog</a>. Our notebook error-resolution agent shipped in Datalore (<a href="https://arxiv.org/abs/2410.14393" target="_blank" rel="noopener">EMNLP 2024 demo</a>).</li>
                     </ul>
                 </section>
-                <section id="projects" class="section">
-                    <h2>Selected Projects <a class="anchor" href="#projects">#</a></h2>
-                    <ul>
-                        <li><strong>PIPer</strong> — agentic package installer and environment stabilizer. <a class="pill" href="https://arxiv.org/abs/2509.25455" target="_blank">ArXiv</a></li>
-                        <li><strong>EnvBench</strong> — environments for agent setup, tooling, dependency handling. <a class="pill" href="https://arxiv.org/abs/2503.14443" target="_blank">ArXiv</a></li>
-                        <li><strong>Complexity Trap</strong> — agent performance under compounding task complexity. <a class="pill" href="https://arxiv.org/abs/2508.21433" target="_blank">ArXiv</a></li>
-                        <li><strong>GitGoodBench</strong> — Git-centric evaluation tasks on real repos. <a class="pill" href="https://arxiv.org/abs/2505.22583" target="_blank">ArXiv</a></li>
-                        <li><strong>Debug Smarter</strong> — interactive debugging workflows with tools, memory, traces. <a class="pill" href="https://arxiv.org/abs/2410.14393" target="_blank">ArXiv</a></li>
+                <section id="earlier" class="section">
+                    <h2>Earlier Work <a class="anchor" href="#earlier">#</a></h2>
+                    <ul class="work-list">
+                        <li><strong>KIT and Heidelberg University, 2019–2025.</strong> PhD (magna cum laude) on self-supervised learning for X-ray tomography: denoising without labels, pre-training, sample localisation, and cheaper labelling. For <a href="https://doi.org/10.1364/OE.492221" target="_blank" rel="noopener">shot noise reduction</a> (Optics Express 2023) I worked through the imaging process step by step to design the training prior; lower dose means less synchrotron time for the same result.</li>
+                        <li><strong>Sberbank AI Lab, 2016–2019.</strong> Interpretation of neural networks (<a href="https://arxiv.org/abs/1811.02783" target="_blank" rel="noopener">YASENN</a>, two patents), credit scoring, time series for security incidents, and a deployed text classifier for internal correspondence.</li>
+                        <li><strong>Kaspersky Lab, 2014–2016.</strong> Built the parser, website, and internal system behind <a href="https://threats.kaspersky.com/" target="_blank" rel="noopener">threats.kaspersky.com</a>, still in service, and systems for analysing user statistics.</li>
+                        <li><strong>Institute of Control Sciences, RAS, 2013–2015.</strong> Wavelet neural networks and network initialisation; my first two papers.</li>
                     </ul>
                 </section>
                 <section id="publications" class="section">
                     <h2>Selected Publications <a class="anchor" href="#publications">#</a></h2>
                     <ul class="pub-list">
-                        <li><a target="_blank" href="https://arxiv.org/abs/2503.14443">EnvBench: A Benchmark for Automated Environment Setup</a><div class="pub-meta">arXiv.org, 2025</div></li>
-                        <li><a target="_blank" href="https://arxiv.org/abs/2509.25455">PIPer: On-Device Environment Setup via Online Reinforcement Learning</a><div class="pub-meta">arXiv.org, 2025</div></li>
-                        <li><a target="_blank" href="https://arxiv.org/abs/2508.21433">The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization</a><div class="pub-meta">arXiv.org, 2025</div></li>
-                        <li><a target="_blank" href="https://arxiv.org/abs/2402.11635">Tool‑Augmented LLMs as a Universal Interface for IDEs</a><div class="pub-meta">2024</div></li>
-                        <li><a target="_blank" href="https://arxiv.org/abs/2410.14393">Debug Smarter, Not Harder: AI Agents for Error Resolution in Computational Notebooks</a><div class="pub-meta">EMNLP, 2024</div></li>
+                        <li><a target="_blank" href="https://arxiv.org/abs/2508.21433">The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management</a><div class="pub-meta">DL4Code workshop at NeurIPS 2025</div></li>
+                        <li><a target="_blank" href="https://arxiv.org/abs/2509.25455">PIPer: On-Device Environment Setup via Online Reinforcement Learning</a><div class="pub-meta">arXiv, 2025; earlier version at the DL4Code workshop, NeurIPS 2025</div></li>
+                        <li><a target="_blank" href="https://arxiv.org/abs/2503.14443">EnvBench: A Benchmark for Automated Environment Setup</a><div class="pub-meta">DL4Code workshop at ICLR 2025</div></li>
+                        <li><a target="_blank" href="https://arxiv.org/abs/2410.12046">Towards Realistic Evaluation of Commit Message Generation by Matching Online and Offline Settings</a><div class="pub-meta">ICSE-SEIP 2025</div></li>
+                        <li><a target="_blank" href="https://arxiv.org/abs/2410.14393">Debug Smarter, Not Harder: AI Agents for Error Resolution in Computational Notebooks</a><div class="pub-meta">EMNLP 2024, System Demonstrations</div></li>
+                        <li><a target="_blank" href="https://doi.org/10.1364/OE.492221">Shot Noise Reduction in Radiographic and Tomographic Multi-Channel Imaging with Self-Supervised Deep Learning</a><div class="pub-meta">Optics Express, 2023</div></li>
                     </ul>
-                    <p><a class="pill" href="publications.html">View all publications</a></p>
+                    <p><a class="pill" href="publications.html">All publications</a></p>
+                </section>
+                <section id="service" class="section">
+                    <h2>Service and Teaching <a class="anchor" href="#service">#</a></h2>
+                    <ul class="work-list">
+                        <li>Reviewer for ICML (Gold Reviewer, 2026), NeurIPS, and AAAI.</li>
+                        <li>Invited talk on AI agents at the IDE Workshop, ICSE 2025.</li>
+                        <li>Supervised about seven Bachelor's and Master's theses with DFKI, TUM, LMU, and Constructor University Bremen.</li>
+                        <li>At JetBrains, ran two internal series on building AI agents and on evaluating ML features, for about 200 colleagues.</li>
+                    </ul>
                 </section>
                 <section id="contact" class="section">
                     <h2>Contact <a class="anchor" href="#contact">#</a></h2>
-                    <p>Email: <a href="mailto:yaroslav.zharov@jetbrains.com">yaroslav.zharov@jetbrains.com</a></p>
+                    <p>Email: <a href="mailto:mart.slaaf@gmail.com">mart.slaaf@gmail.com</a></p>
                     <p>
                         <a class="pill" href="https://github.com/MartSlaaf" target="_blank">GitHub</a>
                         <a class="pill" href="https://scholar.google.com/citations?user=U4LFdJ0AAAAJ" target="_blank">Google Scholar</a>
@@ -112,7 +125,7 @@
                     </p>
                 </section>
                 <footer class="site-footer text-white text-center py-3">
-                    <p>&copy; 2024 Yaroslav Zharov. All rights reserved.</p>
+                    <p>&copy; 2026 Yaroslav Zharov</p>
                 </footer>
             </div>
         </main>
@@ -122,7 +135,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Yaroslav Zharov",
-      "jobTitle": "AI Agents Research Team Lead",
+      "jobTitle": "Research Lead, AI Agents for Software Engineering",
       "affiliation": {"@type": "Organization", "name": "JetBrains Research"},
       "url": "https://martslaaf.github.io/",
       "image": "https://martslaaf.github.io/assets/img/ava.jpeg",
